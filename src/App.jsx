@@ -1,8 +1,13 @@
+import { MatrixRain, Hero } from "./components";
+
 function App() {
   return (
-    <>
-      <h1>dobro je</h1>
-    </>
+    <div className="min-h-screen overflow-hidden">
+      <MatrixRain className="absolute inset-0" />
+      <div className="flex flex-col">
+        <Hero />
+      </div>
+    </div>
   );
 }
 
