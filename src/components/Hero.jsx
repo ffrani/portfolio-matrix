@@ -205,22 +205,25 @@ const Hero = () => {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   exit={{ scale: 0 }}
-                  className="bg-black w-full sm:w-1/2 lg:w-1/3 rounded-lg p-8 relative px-2 overflow-y-auto"
-                  style={{ maxHeight: "50vh" }}
+                  className="bg-black w-full sm:w-1/2 lg:w-1/3 rounded-lg p-8 relative px-3"
                 >
                   <style>
                     {`
-                    ::-webkit-scrollbar {
+                    .custom-scrollbar {
+                      scrollbar-width: thin;
+                      scrollbar-color: #4b4b4b #2c2c2c;
+                    }
+                    .custom-scrollbar::-webkit-scrollbar {
                       width: 12px;
                     }
-                    ::-webkit-scrollbar-track {
+                    .custom-scrollbar::-webkit-scrollbar-track {
                       background: #2c2c2c;
                     }
-                    ::-webkit-scrollbar-thumb {
+                    .custom-scrollbar::-webkit-scrollbar-thumb {
                       background: #4b4b4b;
                       border-radius: 6px;
                     }
-                    ::-webkit-scrollbar-thumb:hover {
+                    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
                       background: #555;
                     }
                   `}
@@ -232,26 +235,29 @@ const Hero = () => {
                     </span>
                   </h2>
                   {/* Projects content goes here */}
-
-                  <div className="pl-4">
-                    <a href="https://www.laiout.co/">
-                      <li className="text-left pb-3">
-                        /laiout.co website and webapp
-                      </li>
-                    </a>
-                    <p className="text-white text-left">
-                      I was working on this website during 6 months of
-                      internship as a Frontend developer at laiout.co.
-                    </p>
-                  </div>
-
-                  <div className="pl-4 pt-3">
-                    <a href="https://ffrani.github.io/crypto-tracker-app/">
-                      <li className="text-left pb-3">/crypto_tracker_app</li>
-                    </a>
-                    <p className="text-white text-left">
-                      Keep track of you favourite crypto currencies.
-                    </p>
+                  <div
+                    className="max-h-[50vh] overflow-y-auto custom-scrollbar"
+                    style={{ scrollbarWidth: "thin" }}
+                  >
+                    <div className="pl-4">
+                      <a href="https://www.laiout.co/">
+                        <li className="text-left pb-3">
+                          /laiout.co website and webapp
+                        </li>
+                      </a>
+                      <p className="text-white text-left">
+                        I was working on this website during 6 months of
+                        internship as a Frontend developer at laiout.co.
+                      </p>
+                    </div>
+                    <div className="pl-4 pt-3">
+                      <a href="https://ffrani.github.io/crypto-tracker-app/">
+                        <li className="text-left pb-3">/crypto_tracker_app</li>
+                      </a>
+                      <p className="text-white text-left">
+                        Keep track of you favourite crypto currencies.
+                      </p>
+                    </div>
                   </div>
                   <button
                     onClick={handleCloseProjectsModal}
@@ -303,8 +309,29 @@ const Hero = () => {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   exit={{ scale: 0 }}
-                  className="bg-black w-full sm:w-1/2 lg:w-1/3 rounded-lg p-8 relative px-2"
+                  className="bg-black w-full sm:w-1/2 lg:w-1/3 rounded-lg p-8 relative px-3"
                 >
+                  <style>
+                    {`
+                    .custom-scrollbar {
+                      scrollbar-width: thin;
+                      scrollbar-color: #4b4b4b #2c2c2c;
+                    }
+                    .custom-scrollbar::-webkit-scrollbar {
+                      width: 12px;
+                    }
+                    .custom-scrollbar::-webkit-scrollbar-track {
+                      background: #2c2c2c;
+                    }
+                    .custom-scrollbar::-webkit-scrollbar-thumb {
+                      background: #4b4b4b;
+                      border-radius: 6px;
+                    }
+                    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                      background: #555;
+                    }
+                  `}
+                  </style>
                   <h2 className="text-2xl font-bold mb-4">
                     contact_me:${""}
                     <span className="blinking" style={{ fontWeight: 400 }}>
@@ -312,6 +339,10 @@ const Hero = () => {
                     </span>
                   </h2>
                   {/* Contact content goes here */}
+                  <div
+                    className="max-h-[50vh] overflow-y-auto custom-scrollbar"
+                    style={{ scrollbarWidth: "thin" }}
+                  ></div>
                   <button
                     onClick={handleCloseContactModal}
                     className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 cursor-pointer"
