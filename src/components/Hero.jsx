@@ -93,17 +93,21 @@ const Hero = () => {
                 >
                   <style>
                     {`
-                    ::-webkit-scrollbar {
+                    .custom-scrollbar {
+                      scrollbar-width: thin;
+                      scrollbar-color: #4b4b4b #2c2c2c;
+                    }
+                    .custom-scrollbar::-webkit-scrollbar {
                       width: 12px;
                     }
-                    ::-webkit-scrollbar-track {
+                    .custom-scrollbar::-webkit-scrollbar-track {
                       background: #2c2c2c;
                     }
-                    ::-webkit-scrollbar-thumb {
+                    .custom-scrollbar::-webkit-scrollbar-thumb {
                       background: #4b4b4b;
                       border-radius: 6px;
                     }
-                    ::-webkit-scrollbar-thumb:hover {
+                    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
                       background: #555;
                     }
                   `}
