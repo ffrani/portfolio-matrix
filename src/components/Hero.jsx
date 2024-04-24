@@ -89,8 +89,7 @@ const Hero = () => {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   exit={{ scale: 0 }}
-                  className="bg-black w-full sm:w-1/2 lg:w-1/3 rounded-lg p-8 relative px-3 overflow-y-auto"
-                  style={{ maxHeight: "50vh" }}
+                  className="bg-black w-full sm:w-1/2 lg:w-1/3 rounded-lg p-8 relative px-3"
                 >
                   <style>
                     {`
@@ -115,22 +114,43 @@ const Hero = () => {
                       _
                     </span>
                   </h2>
-                  <p className="mb-6 text-white text-left text-lg sm:text-xl">
-                    I&apos;m Filip, a{" "}
-                    <span className="text-primary">{age}</span> years old
-                    self-taught Frontend developer who loves to code!
-                    <br />
-                    <br />
-                    Technologies I use include:
-                    <br />
-                    React.js, JavaScript (ES6), HTML, CSS, Sass, Tailwind,
-                    Bootstrap, MUI, AJAX, MySQL, CSS Flexbox/Grid, Node.js, Git,
-                    GitLab, GitHub, npm, yarn.
-                    <br />
-                    <br />
-                    Technologies I am currently getting knowledgeable at:
-                    TypeScript, Vue.js
-                  </p>
+                  <div
+                    className="max-h-[50vh] overflow-y-auto custom-scrollbar"
+                    style={{ scrollbarWidth: "thin" }}
+                  >
+                    <p className="mb-6 text-white text-left text-lg sm:text-xl">
+                      I&apos;m Filip, a{" "}
+                      <span className="text-primary">{age}</span> years old
+                      self-taught Frontend developer who loves to code!
+                      <br />
+                      <br />
+                      Technologies I use include:
+                      <br />
+                      React.js, JavaScript (ES6), HTML, CSS, Sass, Tailwind,
+                      Bootstrap, MUI, AJAX, MySQL, CSS Flexbox/Grid, Node.js,
+                      Git, GitLab, GitHub, npm, yarn.
+                      <br />
+                      <br />
+                      Technologies I am currently getting knowledgeable at:
+                      TypeScript, Vue.js
+                    </p>
+                    <p className="mb-6 text-white text-left text-lg sm:text-xl">
+                      I&apos;m Filip, a{" "}
+                      <span className="text-primary">{age}</span> years old
+                      self-taught Frontend developer who loves to code!
+                      <br />
+                      <br />
+                      Technologies I use include:
+                      <br />
+                      React.js, JavaScript (ES6), HTML, CSS, Sass, Tailwind,
+                      Bootstrap, MUI, AJAX, MySQL, CSS Flexbox/Grid, Node.js,
+                      Git, GitLab, GitHub, npm, yarn.
+                      <br />
+                      <br />
+                      Technologies I am currently getting knowledgeable at:
+                      TypeScript, Vue.js
+                    </p>
+                  </div>
                   <button
                     onClick={handleCloseAboutModal}
                     className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 cursor-pointer"
