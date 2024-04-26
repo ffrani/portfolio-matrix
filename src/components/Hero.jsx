@@ -59,18 +59,24 @@ const ProjectsModalContent = () => (
     </h2>
     <div className="max-h-[50vh] overflow-y-auto custom-scrollbar">
       <div className="pl-4">
-        <a href="https://www.laiout.co/">
-          <li className="text-left pb-3">/laiout.co website and webapp</li>
-        </a>
+        <ul>
+          <a href="https://www.laiout.co/">
+            <li className="text-left pb-3 text-primary">
+              /laiout.co website and webapp
+            </li>
+          </a>
+        </ul>
         <p className="text-white text-left">
           I was working on this website during 6 months of internship as a
           Frontend developer at laiout.co.
         </p>
       </div>
       <div className="pl-4 pt-3">
-        <a href="https://ffrani.github.io/crypto-tracker-app/">
-          <li className="text-left pb-3">/crypto_tracker_app</li>
-        </a>
+        <ul>
+          <a href="https://ffrani.github.io/crypto-tracker-app/">
+            <li className="text-left pb-3 text-primary">/crypto_tracker_app</li>
+          </a>
+        </ul>
         <p className="text-white text-left">
           Keep track of your favorite crypto currencies.
         </p>
@@ -93,9 +99,9 @@ const ContactModalContent = () => (
         Feel free to contact me through any of the following channels:
         <br />
         <br />
-        Email: example@example.com
+        Email: ff.franic@gmail.com
         <br />
-        Phone: +1234567890
+        Phone: +47 46 55 56 54
       </p>
     </div>
   </div>
