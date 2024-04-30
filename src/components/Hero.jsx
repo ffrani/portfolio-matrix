@@ -60,26 +60,51 @@ const ProjectsModalContent = () => (
     <div className="max-h-[50vh] overflow-y-auto custom-scrollbar">
       <div className="pl-4">
         <ul>
-          <a href="https://www.laiout.co/">
-            <li className="text-left pb-3 text-primary">
-              /laiout.co website and webapp
-            </li>
-          </a>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://www.laiout.co/">/laiout.co website and webapp</a>
+          </li>
         </ul>
         <p className="text-white text-left">
           I was working on this website during 6 months of internship as a
           Frontend developer at laiout.co.
         </p>
       </div>
+
       <div className="pl-4 pt-3">
         <ul>
-          <a href="https://ffrani.github.io/crypto-tracker-app/">
-            <li className="text-left pb-3 text-primary">/crypto_tracker_app</li>
-          </a>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/crypto-tracker-app/">
+              /crypto_tracker_app
+            </a>
+          </li>
         </ul>
         <p className="text-white text-left">
           Keep track of your favorite crypto currencies.
         </p>
+      </div>
+
+      <div className="pl-4 pt-3">
+        <ul>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/expense-tracker-app/">
+              /expense_tracker_app
+            </a>
+          </li>
+        </ul>
+        <p className="text-white text-left">
+          With this web-app you can keep track of your expenses.
+        </p>
+      </div>
+
+      <div className="pl-4 pt-3">
+        <ul>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/pokemon-card-app/">
+              /pokemon_card_app
+            </a>
+          </li>
+        </ul>
+        <p className="text-white text-left">Search your favorite pokemon.</p>
       </div>
     </div>
   </div>
