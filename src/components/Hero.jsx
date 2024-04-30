@@ -27,19 +27,6 @@ const AboutModalContent = ({ age }) => (
         <br />
         Technologies I am currently getting knowledgeable at: TypeScript, Vue.js
       </p>
-      <p className="mb-6 text-white text-left text-lg sm:text-xl">
-        I&apos;m Filip, a <span className="text-primary">{age}</span> years old
-        self-taught Frontend developer who loves to code!
-        <br />
-        <br />
-        Technologies I use include:
-        <br />
-        React.js, JavaScript (ES6), HTML, CSS, Sass, Tailwind, Bootstrap, MUI,
-        AJAX, MySQL, CSS Flexbox/Grid, Node.js, Git, GitLab, GitHub, npm, yarn.
-        <br />
-        <br />
-        Technologies I am currently getting knowledgeable at: TypeScript, Vue.js
-      </p>
     </div>
   </div>
 );
@@ -105,6 +92,71 @@ const ProjectsModalContent = () => (
           </li>
         </ul>
         <p className="text-white text-left">Search your favorite pokemon.</p>
+      </div>
+
+      <div className="pl-4 pt-3">
+        <ul>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/guess-a-number-game/">
+              /guess_a_number
+            </a>
+          </li>
+        </ul>
+        <p className="text-white text-left">
+          Guess a number from 1 to 20, the less tries you take, the higher the
+          score. You have five tries. Make them count!
+        </p>
+      </div>
+
+      <div className="pl-4 pt-3">
+        <ul>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/bank-app/">/bank_app</a>
+          </li>
+        </ul>
+        <p className="text-white text-left">
+          Arrays, Numbers, Dates, Timers.. Bank app for tracking and managing
+          the users account Fake &quot;log in&quot; with: User &quot;ff&quot;
+          and PIN &quot;1111&quot;
+        </p>
+      </div>
+
+      <div className="pl-4 pt-3">
+        <ul>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/bank-website/">/bank_website</a>
+          </li>
+        </ul>
+        <p className="text-white text-left">
+          DOM Manipulation, Events.. Minimalistic fake bank website
+        </p>
+      </div>
+
+      <div className="pl-4 pt-3">
+        <ul>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/fastest-to-100-game/">
+              /fastest_to_100
+            </a>
+          </li>
+        </ul>
+        <p className="text-white text-left">
+          DOM Manipulation, Game logic implementation, Event listeners.. Two
+          player game where the goal is to reach a 100 points before your
+          opponent
+        </p>
+      </div>
+
+      <div className="pl-4 pt-3">
+        <ul>
+          <li className="text-left pb-1 text-primary">
+            <a href="https://ffrani.github.io/mapty/">/mapty</a>
+          </li>
+        </ul>
+        <p className="text-white text-left">
+          Object Oriented Programming, Geolocation, APIs.. An app that tracks
+          user workouts/trips using their geolocation.
+        </p>
       </div>
     </div>
   </div>
